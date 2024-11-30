@@ -81,7 +81,7 @@ backdrop-filter:blur(4px);
 }
 
 
-.mynavbar, .navbar-brand, .mynavbar .offcanvas-title{
+.mynavbar .navbar-brand .mynavbar .offcanvas-title{
 	font-family: 'sacramento',cursive;
 	font-size: 3.2rem;
 }
@@ -483,10 +483,10 @@ height: 140px;
 html{
 	font-size: 60%;
 }
-}
 .timeline li .timeline-image {
 width: 80px;
-height: 80px;
+height: 80px;	
+
 }
 .timeline li .timeline-panel {
 width: 65%;
@@ -497,5 +497,10 @@ transform: translateX(-20px);
 }
 .timeline li .timeline-panel::after{
 	top: 31px;
+}
+
+.simply-countdown>.simply-section{
+	pading: 3px;
+	margin: 5px;
 }
 }
