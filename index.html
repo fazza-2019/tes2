@@ -24,7 +24,7 @@
     
 <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
 	<main>
-		<h4>  kepada <span>bapak/ibu/</span>saudara/i </h4>
+		<h4>  kepada bapak/ibu/saudara/i.</h4>
 	<h1>iwan dan nindi</h1>
 
 	<p>akan melangsungkan resepsi pernikahan dalam:</p>
@@ -408,7 +408,7 @@
     
     <script>
     simplyCountdown ('.simply-countdown',{
-            year: 2024, // required
+            year: 2025, // required
             month: 12, // required
             day: 1, // required
             hours: 0.1, // Default is 0 [0-23] integer
@@ -511,11 +511,10 @@ isPlaying = !isPlaying;
 </script>
 <script>
     const urlParams = new URLSearchParams (window.location.search);
-    const nama = urlParams.get('nama') || '';
-    const pronoun = urlParams.get('p') || 'bapak/ibu/s/i';
+    const nama = urlParams.get('nama');
+    
     const namaContainer = document.querySelector('.hero h4 span');
-    namaContainer.innerText= '${pronoun} ${nama},'.replace(/ ,$/, ',');
-    document.querySelector('#nama').value =nama;
+    namaContainer.innerText = nama;
 </script>
   </body>
 
