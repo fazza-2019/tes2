@@ -81,7 +81,7 @@ backdrop-filter:blur(4px);
 }
 
 
-.mynavbar .navbar-brand .mynavbar .offcanvas-title{
+.mynavbar, .navbar-brand, .mynavbar .offcanvas-title{
 	font-family: 'sacramento',cursive;
 	font-size: 3.2rem;
 }
@@ -217,7 +217,7 @@ display: block;
 	position: relative;
 }
 
-.timeline::before {
+.timeline:: {
 content: '';
 top: 0;
 bottom: 0;
@@ -234,6 +234,7 @@ left: 50%;
 	position: relative;
 
 }
+
 .timeline li::before,
 .timeline li::after {
 	content: '';
@@ -241,7 +242,9 @@ left: 50%;
 }
 
 .timeline li::after {
+	content: '';
 	clear: both;
+
 }
 .timeline li .timeline-image {
 	width: 160px;
@@ -266,7 +269,7 @@ transform: translateX(-50%);
 	background-color: #fff;
 }
 
-.timeline li .timeline-panel::before{
+.timeline li .timeline-panel::{
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -413,6 +416,15 @@ footer li{
 html{
 	font-size: 75%;
 }
+
+.mynavbar .nav-link{
+	font-size: 2rem;
+	text-align: center;
+}
+
+
+
+
 .home .heart{
 	display: none;
 }
@@ -425,10 +437,10 @@ html{
 		margin-left: 45px;
 		top: 16px;
 }
-
 .timeline li .timeline-panel{
 	width: calc((100% - 200px));
 	float: right;
+
 }
 .timeline li .timeline-panel::before {
 border-left-width: 0;
@@ -453,23 +465,19 @@ right: auto;
 
 @media (max-width:768px){
 html{
-	font-size: 65%;
-}
-}
-
-
-
-.mynavbar .nav-link{
-	font-size: 2rem;
-	text-align: center;
-}
+	font-size: 65%; 
+  }
 
 .timeline li .timeline-image {
 width: 140px;
 height: 140px;
-}
+
 
 }
+}
+
+
+
 
 .sticky-top {
 	overflow: hidden;
@@ -483,24 +491,28 @@ height: 140px;
 html{
 	font-size: 60%;
 }
+
+.simply-countdown>.simply-section{
+	padding : 40px;
+	margin  : 5px ;
+}
 .timeline li .timeline-image {
-width: 80px;
-height: 80px;	
+width: 70px;
+height: 70px;
+}
+
+.timeline li .timeline-inverted .timeline-panel::before{
+	top: 30px;
+	right: -13px;
+
+}
+.timeline li .timeline-inverted .timeline-panel::after{
+	top: 31px;
+	right: -13px;
 
 }
 .timeline li .timeline-panel {
-width: 65%;
-transform: translateX(-20px);
-}
-.timeline li .timeline-panel::before{
-	top: 30px;
-}
-.timeline li .timeline-panel::after{
-	top: 31px;
-}
+	float: right;
 
-.simply-countdown>.simply-section{
-	pading: 3px;
-	margin: 5px;
 }
 }
