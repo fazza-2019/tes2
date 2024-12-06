@@ -487,9 +487,10 @@ height: 140px;
 html{
 	font-size: 55%;
 }
-.simply-countdown>.simply-section {
+}
+	.simply-countdown>.simply-section {
 	padding : 30px;
-	margin  : 5px ;
+	margin  : 5px;
 
 }
 .timeline li .timeline-image {
