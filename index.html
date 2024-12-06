@@ -24,7 +24,7 @@
     
 <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
 	<main>
-		<h4>  kepada bapak/ibu/saudara/i.</h4>
+		<h4>Kepada, <span id="nama-penerima">Tamu Undangan</span>.</h4>
 	<h1>iwan dan nindi</h1>
 
 	<p>akan melangsungkan resepsi pernikahan dalam:</p>
@@ -507,11 +507,19 @@ isPlaying = !isPlaying;
 });
 </script>
 <script>
-    const urlParams = new URLSearchParams (window.location.search);
-    const nama = urlParams.get('nama');
-    
-    const namaContainer = document.querySelector('.hero h4 span');
-    namaContainer.innerText = nama;
+    // Mengambil nama dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const nama = urlParams.get('nama'); // Ambil parameter "nama" dari URL
+
+// Target elemen untuk diubah
+const namaContainer = document.getElementById('nama-penerima');
+
+// Set nama jika ada di URL, atau gunakan teks default
+if (nama) {
+  namaContainer.innerText = nama;
+} else {
+  namaContainer.innerText = "Tamu Undangan";
+}
 </script>
   </body>
 
