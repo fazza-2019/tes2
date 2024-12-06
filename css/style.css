@@ -485,10 +485,10 @@ height: 140px;
 
 @media (max-width:576px){
 html{
-	font-size: 60%;
+	font-size: 55%;
 }
-	simply-countdown>.simply-section{
-	padding : 40px;
+	simply-countdown>.simply-section {
+	padding : 45px;
 	margin  : 5px ;
 }
 .timeline li .timeline-image {
