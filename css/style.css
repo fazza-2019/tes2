@@ -487,6 +487,7 @@ height: 140px;
 @media (max-width:576px){
 html{
 	font-size: 55%;
+}
 	simply-countdown>.simply-section{
 	padding : 40px;
 	margin  : 5px ;
