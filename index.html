@@ -386,7 +386,8 @@
         <source src="audio/Maher Zain - For The Rest Of My Life (Lyrics).mp3" type="audio/mp3">
     </audio >
     <div class="audio-icon-wrapper" style="display:none;">
-        <i class="bi bi-disc"></i>
+        <i id="audio-icon" class="bi bi-disc"></i>
+
     </div>
 </div> 
 </section>
@@ -472,19 +473,18 @@ function playAudio() {
     isPlaying = true;
 }
 
-audioIconWrapper.onclick = function (){
-if (isPlaying) {
-song.pause();
-audioIcon.classlist.remove('bi-disc');
-audioIcon.classlist.add('bi-pause-circle');
-}else{
+audioIconWrapper.onclick = function() {
+  if (isPlaying) {
+    song.pause();
+    audioIcon.classList.add('bi-pause-circle');
+    audioIcon.classList.remove('bi-disc');
+  } else {
     song.play();
-    audioIcon.classlist.add('bi-disc');
-audioIcon.classlist.remove('bi-pause-circle');
-}
-isPlaying = !isPlaying;
-
-}
+    audioIcon.classList.add('bi-disc');
+    audioIcon.classList.remove('bi-pause-circle');
+  }
+  isPlaying = !isPlaying;
+};
 
  disableScroll();
 
