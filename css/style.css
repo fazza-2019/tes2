@@ -366,8 +366,8 @@ footer li{
 	bottom: 2.5rem;
 	right: 2rem;
 	cursor: pointer;
-	color: white;
-	opacity: 0.5;
+	color: #000000;
+	opacity: ;
 	mix-blend-mode: difference;
 	animation: rotating 4s linear infinite;
 	transform-origin: center;
