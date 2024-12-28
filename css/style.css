@@ -338,6 +338,30 @@ right: auto;
 
 }
 
+.gift li{
+	display:block;
+	color: white;
+	text-align: end;
+	font-size: 1.2rem;
+	line-height: 120px
+	margin-bottom:-20px;
+	padding-top: 50px;
+	
+	
+}
+.gift .list-group-item{
+	height: 210px;
+	background-image: url(https://raw.githubusercontent.com/fazza-2019/galeri/refs/heads/main/IMG_20241228_215802.jpg);
+	background-size: cover;
+	background-position: center: 
+	border-radius: 20px;
+	padding-right: 5px;
+}
+.gift .fw-bold{
+	margin-top: 100px;
+	padding-right: 10px;
+}
+
 footer{
 	padding: 3rem;
 	background-color: var(--pink);
